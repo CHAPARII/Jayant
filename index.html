@@ -26,9 +26,9 @@
             animation: pulse 1.5s infinite; /* Makes the text pop */
         }
 
-        img {
-            max-width: 300px; /* Limit image size */
-            max-height: 300px; /* Limit image height */
+        video {
+            max-width: 300px; /* Limit video size */
+            max-height: 300px; /* Limit video height */
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
         }
@@ -45,19 +45,9 @@
 </head>
 <body>
     <h1>Our New Meme Star</h1>
-    <img src="media/DSC02448.JPG" alt="Meme Star">
-    
-    <!-- Background Music -->
-    <audio id="backgroundMusic" autoplay loop muted>
-        <source src="media/chaparii.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <script>
-        window.onload = () => {
-            const audio = document.getElementById('backgroundMusic');
-            audio.muted = false; // Unmute the audio after page load
-            audio.play(); // Explicitly start the audio
-        };
-    </script>        
+    <video autoplay loop>
+        <source src="media/jayantt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>        
 </body>
 </html>
